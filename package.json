@@ -1,6 +1,6 @@
 {
-    "name": "wc3maptranslator",
-    "version": "3.0.2",
+    "name": "@voces/wc3maptranslator",
+    "version": "4.0.0",
     "description": "Module to translate between `war3map` and `json` formats for WarCraft III .w3x maps",
     "keywords": [
         "wc3",
@@ -26,7 +26,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://chiefofgxbxl@github.com/ChiefOfGxBxL/WC3MapTranslator.git"
+        "url": "git+https://voces@github.com/voces/WC3MapTranslator.git"
     },
     "author": "ChiefOfGxBxL",
     "contributors": [
@@ -34,18 +34,18 @@
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/ChiefOfGxBxL/WC3MapTranslator/issues"
+        "url": "https://github.com/voces/WC3MapTranslator/issues"
     },
-    "homepage": "https://github.com/ChiefOfGxBxL/WC3MapTranslator#readme",
+    "homepage": "https://github.com/voces/WC3MapTranslator#readme",
     "dependencies": {
         "intn": "^1.0.0",
-        "round-to": "^4.0.0"
+        "round-to": "^4.1.0"
     },
     "devDependencies": {
         "@istanbuljs/nyc-config-typescript": "^0.1.3",
         "@types/fs-extra": "^8.0.1",
         "@types/mocha": "^5.2.7",
-        "@types/node": "^12.12.21",
+        "@types/node": "^12.12.26",
         "@types/round-to": "^4.0.0",
         "coveralls": "^3.0.9",
         "diff-buf": "^1.0.1",
@@ -55,8 +55,8 @@
         "mocha": "^6.2.2",
         "nyc": "^14.1.1",
         "source-map-support": "^0.5.16",
-        "ts-node": "^8.5.4",
+        "ts-node": "^8.6.2",
         "tslint": "^5.20.1",
-        "typescript": "^3.7.4"
+        "typescript": "^3.7.5"
     }
 }

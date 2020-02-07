@@ -8,7 +8,7 @@ const ieee754 = require('ieee754'),
 
         // Map decimal bytes to hex bytes
         // Bytes are already in correct little-endian form
-        return byteNum.map((Byte) => {
+        return byteNum.map((Byte: number) => {
             return '0x' + Byte.toString(16);
         });
     },
@@ -17,7 +17,7 @@ const ieee754 = require('ieee754'),
     };
 
 export class HexBuffer {
-    public _buffer = [];
+    public _buffer: Array<string> = [];
 
     public addString(str: string, isNullTerminated = false) {
         // Write each char to the buffer
@@ -64,7 +64,7 @@ export class HexBuffer {
         });
     }
 
-    public addByte(byte) {
+    public addByte(byte: number) {
         this._buffer.push('0x' + byte.toString(16));
     }
 
@@ -73,6 +73,6 @@ export class HexBuffer {
     }
 
     public getBuffer(): Buffer {
-        return Buffer.from(this._buffer);
+        return Buffer.from(this._buffer.join("").replace(/0x/g, ""), "hex");
     }
 }
