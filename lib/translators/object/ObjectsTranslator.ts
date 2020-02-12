@@ -1,5 +1,6 @@
-import { HexBuffer } from '../../HexBuffer';
-import { W3Buffer } from '../../W3Buffer';
+
+import { HexBuffer } from '../../HexBuffer.js';
+import { W3Buffer } from '../../W3Buffer.js';
 
 enum TableType {
     original = 'original',
@@ -13,7 +14,7 @@ enum ModificationType {
     string = 'string'
 }
 
-interface Modification {
+export interface Modification {
     id: string;
     type: ModificationType; // 'int' | 'real' | 'unreal' | 'string',
     value: any;
@@ -237,3 +238,5 @@ export class ObjectsTranslator {
         };
     }
 }
+
+export default {ObjectsTranslator};

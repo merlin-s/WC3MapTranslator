@@ -27,7 +27,7 @@ export class W3Buffer {
     }
 
     public readString(): string {
-        const string = [];
+        const string: number[] = [];
 
         while (this._buffer[this._offset] !== 0x00) {
             string.push(this._buffer[this._offset]);
@@ -41,7 +41,7 @@ export class W3Buffer {
     }
 
     public readChars(len: number = 1): string {
-        const string = [];
+        const string: number[] = [];
         const numCharsToRead = len || 1;
 
         for (let i = 0; i < numCharsToRead; i++) {
