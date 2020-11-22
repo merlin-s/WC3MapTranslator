@@ -17,7 +17,7 @@ const ieee754 = require('ieee754'),
     };
 
 export class HexBuffer {
-    public _buffer: Array<string> = [];
+    public _buffer: string[] = [];
 
     public addString(str: string, isNullTerminated = false) {
         // Write each char to the buffer
@@ -73,6 +73,6 @@ export class HexBuffer {
     }
 
     public getBuffer(): Buffer {
-        return Buffer.from(this._buffer.join("").replace(/0x/g, ""), "hex");
+        return Buffer.from(this._buffer.join('').replace(/0x/g, ''), 'hex');
     }
 }
