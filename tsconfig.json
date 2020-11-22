@@ -18,6 +18,7 @@
         "esModuleInterop": true,
         "noEmit": false,
     },
-    "include": ["lib"],
+    "baseUrl": ".",
+    "include": ["index.ts", "lib"],
     "exclude": ["node_modules"]
 }

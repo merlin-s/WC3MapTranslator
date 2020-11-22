@@ -100,7 +100,7 @@ fs.writeFileSync('war3mapUnits.doo', unitResults.buffer);
 //  * json (object)
 //  * errors (array)
 // so we have JSON instead of a buffer.
-UnitsTranslator.warToJson(fs.readFileSync('./war/war3mapUnits.doo'));
+//UnitsTranslator.warToJson(fs.readFileSync('./war/war3mapUnits.doo'));
 DoodadsTranslator.warToJson(fs.readFileSync('./war/war3map.doo'));
 TerrainTranslator.warToJson(fs.readFileSync('./war/war3map.w3e'));
 
